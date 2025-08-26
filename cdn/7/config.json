@@ -1,0 +1,1535 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page"
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "GRID",
+      "content": {
+        "1": {
+          "gridType": 3,
+          "type": "WIDGET",
+          "expandable": true,
+          "bbox": {
+            "width": 73.58
+          },
+          "widgetId": "widget_1",
+          "parent": "3"
+        },
+        "2": {
+          "gridType": 3,
+          "type": "WIDGET",
+          "expandable": true,
+          "bbox": {
+            "width": 52.6
+          },
+          "widgetId": "widget_3",
+          "parent": "10"
+        },
+        "3": {
+          "gridType": 0,
+          "bbox": {
+            "width": 100
+          },
+          "children": [
+            "1",
+            "5"
+          ]
+        },
+        "5": {
+          "gridType": 2,
+          "parent": "3",
+          "bbox": {
+            "width": 26.42
+          },
+          "children": [
+            "8",
+            "10"
+          ],
+          "activeTab": 1
+        },
+        "8": {
+          "gridType": 1,
+          "parent": "5",
+          "bbox": {
+            "width": 100
+          },
+          "children": [
+            "11",
+            "12",
+            "13"
+          ],
+          "label": "Search"
+        },
+        "9": {
+          "gridType": 3,
+          "type": "WIDGET",
+          "expandable": true,
+          "parent": "10",
+          "bbox": {
+            "width": 47.4
+          },
+          "widgetId": "widget_8"
+        },
+        "10": {
+          "gridType": 1,
+          "parent": "5",
+          "bbox": {
+            "width": 100
+          },
+          "children": [
+            "2",
+            "9"
+          ],
+          "label": "Direction"
+        },
+        "11": {
+          "gridType": 3,
+          "type": "WIDGET",
+          "expandable": true,
+          "parent": "8",
+          "bbox": {
+            "width": 4.859999999999999
+          },
+          "widgetId": "widget_10"
+        },
+        "12": {
+          "gridType": 3,
+          "type": "WIDGET",
+          "expandable": true,
+          "parent": "8",
+          "bbox": {
+            "width": 45.14
+          },
+          "widgetId": "widget_11"
+        },
+        "13": {
+          "gridType": 3,
+          "type": "WIDGET",
+          "expandable": true,
+          "parent": "8",
+          "bbox": {
+            "width": 50
+          },
+          "widgetId": "widget_12"
+        }
+      },
+      "order": [],
+      "setting": {
+        "rootItem": "3"
+      }
+    },
+    "layout_1": {
+      "content": {},
+      "type": "FIXED",
+      "label": "Map FixedLayout"
+    }
+  },
+  "exbVersion": "1.18.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreengrid",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.18.0",
+      "label": "Map",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": false,
+          "canNavigation": false
+        },
+        "isUseCustomMapState": true,
+        "initialMapDataSourceID": "dataSource_3",
+        "initialMapState": {
+          "viewPoint": {
+            "rotation": 12.578386350650476,
+            "scale": 1593.0860481458285,
+            "targetGeometry": {
+              "spatialReference": {
+                "latestWkid": 3857,
+                "wkid": 102100
+              },
+              "x": 571617.1164289687,
+              "y": 814726.769205088,
+              "z": 10.000000000000028
+            },
+            "camera": {
+              "position": {
+                "spatialReference": {
+                  "latestWkid": 3857,
+                  "wkid": 102100
+                },
+                "x": 571699.097896416,
+                "y": 814359.3542176409,
+                "z": 179.7502867853447
+              },
+              "heading": 347.4216136493495,
+              "tilt": 65.72826054666758
+            }
+          },
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 3857,
+              "wkid": 102100
+            },
+            "xmin": 571453.5725433218,
+            "ymin": 814587.2510964562,
+            "xmax": 571780.6603146157,
+            "ymax": 814866.2873137199
+          },
+          "rotation": 12.578386350650476,
+          "viewType": "3d"
+        },
+        "scaleRange": null
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_1"
+        }
+      },
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_3",
+          "mainDataSourceId": "dataSource_3"
+        }
+      ]
+    },
+    "widget_3": {
+      "uri": "widgets/arcgis/directions/",
+      "version": "1.18.0",
+      "label": "Directions",
+      "config": {
+        "routeConfig": {
+          "useUtility": {
+            "utilityId": "utility_2"
+          }
+        },
+        "searchConfig": {
+          "dataConfig": [
+            {
+              "configId": "config_0",
+              "icon": null,
+              "label": "Merge",
+              "displayLabel": true,
+              "useDataSource": {
+                "dataSourceId": "dataSource_3-f468f163b710427981b1c0c8914d7490",
+                "mainDataSourceId": "dataSource_3-f468f163b710427981b1c0c8914d7490",
+                "rootDataSourceId": "dataSource_3",
+                "fields": [
+                  "Name_of_th"
+                ]
+              },
+              "displayFields": [
+                {
+                  "jimuName": "Name_of_th",
+                  "name": "Name_of_th",
+                  "type": "STRING",
+                  "esriType": "esriFieldTypeString",
+                  "alias": "Name of Building",
+                  "format": null
+                }
+              ],
+              "searchFields": [
+                {
+                  "jimuName": "Name_of_th",
+                  "name": "Name_of_th",
+                  "type": "STRING",
+                  "esriType": "esriFieldTypeString",
+                  "alias": "Name of Building",
+                  "format": null
+                }
+              ],
+              "hint": "",
+              "searchServiceType": "FeatureService",
+              "searchExact": false,
+              "searchInCurrentMapExtent": false
+            }
+          ],
+          "suggestionConfig": {
+            "maxSuggestions": 6,
+            "isUseCurrentLoation": true
+          },
+          "generalConfig": {
+            "hint": ""
+          }
+        }
+      },
+      "id": "widget_3",
+      "useUtilities": [
+        {
+          "utilityId": "utility_2"
+        }
+      ],
+      "outputDataSources": [
+        "widget_3_output_stop",
+        "widget_3_output_direction_point",
+        "widget_3_output_direction_line",
+        "widget_3_output_route"
+      ],
+      "useMapWidgetIds": [
+        "widget_1"
+      ],
+      "style": {
+        "background": {
+          "color": "",
+          "fillType": "fill",
+          "image": {
+            "url": ""
+          }
+        }
+      }
+    },
+    "widget_8": {
+      "uri": "widgets/arcgis/basemap-gallery/",
+      "version": "1.18.0",
+      "label": "Basemap Gallery",
+      "config": {},
+      "id": "widget_8",
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    },
+    "widget_10": {
+      "uri": "widgets/common/search/",
+      "version": "1.18.0",
+      "offPanel": true,
+      "label": "Search",
+      "config": {
+        "searchResultView": "Result_Panel",
+        "arrangementStyle": "Style3",
+        "searchResultStyle": "Classic",
+        "maxSuggestions": 6,
+        "recentSearchesMaxNumber": 6,
+        "resultMaxNumber": 6,
+        "enableFiltering": false,
+        "sourceType": "MapCentric",
+        "dataSourceConfigWithMapCentric": {
+          "widget_1-dataSource_3": {
+            "dataSourceConfig": [
+              {
+                "configId": "config_0",
+                "icon": null,
+                "label": "Merge",
+                "displayLabel": true,
+                "useDataSource": {
+                  "dataSourceId": "dataSource_3-f468f163b710427981b1c0c8914d7490",
+                  "mainDataSourceId": "dataSource_3-f468f163b710427981b1c0c8914d7490",
+                  "rootDataSourceId": "dataSource_3",
+                  "fields": [
+                    "Name_of_th"
+                  ]
+                },
+                "displayFields": [
+                  {
+                    "jimuName": "Name_of_th",
+                    "name": "Name_of_th",
+                    "type": "STRING",
+                    "esriType": "esriFieldTypeString",
+                    "alias": "Name of Building",
+                    "format": null
+                  }
+                ],
+                "searchFields": [
+                  {
+                    "jimuName": "Name_of_th",
+                    "name": "Name_of_th",
+                    "type": "STRING",
+                    "esriType": "esriFieldTypeString",
+                    "alias": "Name of Building",
+                    "format": null
+                  }
+                ],
+                "hint": "",
+                "searchServiceType": "FeatureService",
+                "searchExact": false,
+                "searchInCurrentMapExtent": false
+              },
+              {
+                "configId": "config_widget_1-dataSource_3_1",
+                "icon": null,
+                "label": "Roads_Project",
+                "displayLabel": true,
+                "useDataSource": {
+                  "dataSourceId": "dataSource_3-fde43dd540c64c68a011843f6a337866",
+                  "mainDataSourceId": "dataSource_3-fde43dd540c64c68a011843f6a337866",
+                  "rootDataSourceId": "dataSource_3",
+                  "fields": [
+                    "name"
+                  ]
+                },
+                "displayFields": [
+                  {
+                    "jimuName": "name",
+                    "name": "name",
+                    "type": "STRING",
+                    "esriType": "esriFieldTypeString",
+                    "alias": "name",
+                    "format": null
+                  }
+                ],
+                "searchFields": [
+                  {
+                    "jimuName": "name",
+                    "name": "name",
+                    "type": "STRING",
+                    "esriType": "esriFieldTypeString",
+                    "alias": "name",
+                    "format": null
+                  }
+                ],
+                "hint": "",
+                "searchServiceType": "FeatureService",
+                "searchExact": false,
+                "searchInCurrentMapExtent": false
+              },
+              {
+                "configId": "config_widget_1-dataSource_3_2",
+                "icon": null,
+                "label": "Buildings01",
+                "displayLabel": true,
+                "useDataSource": {
+                  "dataSourceId": "dataSource_3-f4d4b27180404dad966d652ed9728396",
+                  "mainDataSourceId": "dataSource_3-f4d4b27180404dad966d652ed9728396",
+                  "rootDataSourceId": "dataSource_3",
+                  "fields": [
+                    "Name"
+                  ]
+                },
+                "displayFields": [
+                  {
+                    "jimuName": "Name",
+                    "name": "Name",
+                    "type": "STRING",
+                    "esriType": "esriFieldTypeString",
+                    "alias": "Name",
+                    "format": null
+                  }
+                ],
+                "searchFields": [
+                  {
+                    "jimuName": "Name",
+                    "name": "Name",
+                    "type": "STRING",
+                    "esriType": "esriFieldTypeString",
+                    "alias": "Name",
+                    "format": null
+                  }
+                ],
+                "hint": "",
+                "searchServiceType": "FeatureService",
+                "searchExact": false,
+                "searchInCurrentMapExtent": false
+              },
+              {
+                "configId": "config_widget_1-dataSource_3_3",
+                "icon": null,
+                "label": "Vegetation",
+                "displayLabel": true,
+                "useDataSource": {
+                  "dataSourceId": "dataSource_3-61e3ce53038f4d308684acc38a8ae6b1",
+                  "mainDataSourceId": "dataSource_3-61e3ce53038f4d308684acc38a8ae6b1",
+                  "rootDataSourceId": "dataSource_3",
+                  "fields": [
+                    "Name"
+                  ]
+                },
+                "displayFields": [
+                  {
+                    "jimuName": "Name",
+                    "name": "Name",
+                    "type": "STRING",
+                    "esriType": "esriFieldTypeString",
+                    "alias": "Name",
+                    "format": null
+                  }
+                ],
+                "searchFields": [
+                  {
+                    "jimuName": "Name",
+                    "name": "Name",
+                    "type": "STRING",
+                    "esriType": "esriFieldTypeString",
+                    "alias": "Name",
+                    "format": null
+                  }
+                ],
+                "hint": "",
+                "searchServiceType": "FeatureService",
+                "searchExact": false,
+                "searchInCurrentMapExtent": false
+              }
+            ],
+            "synchronizeSettings": false
+          }
+        },
+        "datasourceConfig": [],
+        "isAutoSelectFirstResult": true
+      },
+      "id": "widget_10",
+      "useMapWidgetIds": [
+        "widget_1"
+      ],
+      "useUtilities": [],
+      "outputDataSources": [],
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_3-f468f163b710427981b1c0c8914d7490",
+          "mainDataSourceId": "dataSource_3-f468f163b710427981b1c0c8914d7490",
+          "rootDataSourceId": "dataSource_3",
+          "fields": [
+            "Name_of_th"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_3-fde43dd540c64c68a011843f6a337866",
+          "mainDataSourceId": "dataSource_3-fde43dd540c64c68a011843f6a337866",
+          "rootDataSourceId": "dataSource_3",
+          "fields": [
+            "name"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_3-f4d4b27180404dad966d652ed9728396",
+          "mainDataSourceId": "dataSource_3-f4d4b27180404dad966d652ed9728396",
+          "rootDataSourceId": "dataSource_3",
+          "fields": [
+            "Name"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_3-61e3ce53038f4d308684acc38a8ae6b1",
+          "mainDataSourceId": "dataSource_3-61e3ce53038f4d308684acc38a8ae6b1",
+          "rootDataSourceId": "dataSource_3",
+          "fields": [
+            "Name"
+          ]
+        }
+      ]
+    },
+    "widget_11": {
+      "uri": "widgets/searchAI/",
+      "version": "1.18.0",
+      "offPanel": true,
+      "label": "AISearch",
+      "config": {
+        "searchResultView": "Other_Widgets",
+        "arrangementStyle": "Style3",
+        "searchResultStyle": "Classic",
+        "maxSuggestions": 0,
+        "recentSearchesMaxNumber": 6,
+        "resultMaxNumber": 6,
+        "enableFiltering": false,
+        "sourceType": "MapCentric",
+        "dataSourceConfigWithMapCentric": {
+          "widget_1-dataSource_3": {
+            "dataSourceConfig": [
+              {
+                "configId": "config_widget_1-dataSource_3_2",
+                "icon": null,
+                "label": "Buildings01",
+                "displayLabel": true,
+                "useDataSource": {
+                  "dataSourceId": "dataSource_3-f4d4b27180404dad966d652ed9728396",
+                  "mainDataSourceId": "dataSource_3-f4d4b27180404dad966d652ed9728396",
+                  "rootDataSourceId": "dataSource_3",
+                  "fields": [
+                    "Name"
+                  ]
+                },
+                "displayFields": [
+                  {
+                    "jimuName": "Name",
+                    "name": "Name",
+                    "type": "STRING",
+                    "esriType": "esriFieldTypeString",
+                    "alias": "Name",
+                    "format": null
+                  }
+                ],
+                "searchFields": [
+                  {
+                    "jimuName": "Name",
+                    "name": "Name",
+                    "type": "STRING",
+                    "esriType": "esriFieldTypeString",
+                    "alias": "Name",
+                    "format": null
+                  }
+                ],
+                "hint": "",
+                "searchServiceType": "FeatureService",
+                "searchExact": false,
+                "searchInCurrentMapExtent": false
+              }
+            ],
+            "synchronizeSettings": false
+          }
+        },
+        "datasourceConfig": [],
+        "isAutoSelectFirstResult": true,
+        "isUseCurrentLoation": true
+      },
+      "id": "widget_11",
+      "useMapWidgetIds": [
+        "widget_1"
+      ],
+      "useUtilities": [],
+      "outputDataSources": [],
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_3-f4d4b27180404dad966d652ed9728396",
+          "mainDataSourceId": "dataSource_3-f4d4b27180404dad966d652ed9728396",
+          "rootDataSourceId": "dataSource_3",
+          "fields": [
+            "Name"
+          ]
+        }
+      ]
+    },
+    "widget_12": {
+      "uri": "widgets/Weather/",
+      "version": "1.16.0",
+      "config": {
+        "exampleConfigProperty": "test"
+      },
+      "id": "widget_12",
+      "useMapWidgetIds": [
+        "widget_1"
+      ],
+      "style": {
+        "background": {
+          "fillType": "fill",
+          "image": {
+            "url": "${appResourceUrl}/images/background_setting/1756196357422.jpg",
+            "originalUrl": "${appResourceUrl}/images/background_setting/1756196357422.jpg",
+            "fileName": "1756196357422.jpg",
+            "originalName": "craig-whitehead-SuJp8ZpkubI-unsplash.jpg",
+            "imgSourceType": "BY_UPLOAD",
+            "fileFormat": "image/jpeg",
+            "originalId": "1756196357422",
+            "originalWidth": 3916,
+            "originalHeight": 5872
+          }
+        }
+      }
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "messageConfigs": {
+    "messageConfig_9": {
+      "id": "messageConfig_9",
+      "widgetId": "widget_10",
+      "messageType": "DATA_RECORD_SET_CHANGE",
+      "actions": [
+        {
+          "actionId": "widget_1-showOnMap-1755849752637_for_search_map_centric",
+          "widgetId": "widget_1",
+          "sectionId": null,
+          "messageWidgetId": "widget_10",
+          "actionName": "showOnMap",
+          "description": null,
+          "config": {
+            "isUseCustomSymbol": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1
+                }
+              }
+            },
+            "isOperationalLayer": true
+          },
+          "version": "1.18.0"
+        }
+      ]
+    },
+    "messageConfig_10": {
+      "id": "messageConfig_10",
+      "widgetId": "widget_10",
+      "messageType": "DATA_RECORDS_SELECTION_CHANGE",
+      "actions": [
+        {
+          "actionId": "widget_1-zoomToFeature-1755849752641_for_search_map_centric",
+          "widgetId": "widget_1",
+          "sectionId": null,
+          "messageWidgetId": "widget_10",
+          "actionName": "zoomToFeature",
+          "description": null,
+          "config": {
+            "useDataSource": null,
+            "useDataSources": [],
+            "goToInitialMapExtentWhenSelectionCleared": false,
+            "useAnyTriggerData": true
+          },
+          "version": "1.18.0"
+        }
+      ]
+    },
+    "messageConfig_11": {
+      "id": "messageConfig_11",
+      "widgetId": "widget_11",
+      "messageType": "DATA_RECORD_SET_CHANGE",
+      "actions": [
+        {
+          "actionId": "widget_1-showOnMap-1755849815150_for_search_map_centric",
+          "widgetId": "widget_1",
+          "sectionId": null,
+          "messageWidgetId": "widget_11",
+          "actionName": "showOnMap",
+          "description": null,
+          "config": {
+            "isUseCustomSymbol": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1
+                }
+              }
+            },
+            "isOperationalLayer": true
+          },
+          "version": "1.18.0"
+        }
+      ]
+    },
+    "messageConfig_12": {
+      "id": "messageConfig_12",
+      "widgetId": "widget_11",
+      "messageType": "DATA_RECORDS_SELECTION_CHANGE",
+      "actions": [
+        {
+          "actionId": "widget_1-zoomToFeature-1755849815162_for_search_map_centric",
+          "widgetId": "widget_1",
+          "sectionId": null,
+          "messageWidgetId": "widget_11",
+          "actionName": "zoomToFeature",
+          "description": null,
+          "config": {
+            "useDataSource": null,
+            "useDataSources": [],
+            "goToInitialMapExtentWhenSelectionCleared": false,
+            "useAnyTriggerData": true
+          },
+          "version": "1.18.0"
+        }
+      ]
+    }
+  },
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ],
+  "attributes": {
+    "portalUrl": "https://onesimusgga.maps.arcgis.com",
+    "isWebTier": false,
+    "clientId": "rGfZqMJToNf9bEyG",
+    "express": false,
+    "title": "FUTA Campus Explorer 2.0",
+    "description": "",
+    "type": "Web Experience",
+    "thumbnail": null
+  },
+  "timestamp": 1756200253622,
+  "sharedThemeVariables": null,
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_SCENE",
+      "sourceLabel": "Map_3D",
+      "itemId": "992096fd220e4c96bb8b54dac223ddf0",
+      "portalUrl": "https://onesimusgga.maps.arcgis.com"
+    },
+    "widget_3_output_stop": {
+      "id": "widget_3_output_stop",
+      "label": "Stops",
+      "type": "FEATURE_LAYER",
+      "isOutputFromWidget": true,
+      "geometryType": "esriGeometryPoint",
+      "schema": {
+        "idField": "ObjectID",
+        "fields": {
+          "ObjectID": {
+            "jimuName": "ObjectID",
+            "name": "ObjectID",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeOID",
+            "alias": "ObjectID",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            }
+          },
+          "ArrivalCurbApproach": {
+            "jimuName": "ArrivalCurbApproach",
+            "name": "ArrivalCurbApproach",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Arrival Curb Approach",
+            "format": null
+          },
+          "ArrivalTime": {
+            "jimuName": "ArrivalTime",
+            "name": "ArrivalTime",
+            "type": "DATE",
+            "esriType": "esriFieldTypeDate",
+            "alias": "Arrival Time",
+            "format": null
+          },
+          "ArrivalUTCOffset": {
+            "jimuName": "ArrivalUTCOffset",
+            "name": "ArrivalUTCOffset",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Arrival Time",
+            "format": null
+          },
+          "CumulativeCosts": {
+            "jimuName": "CumulativeCosts",
+            "name": "CumulativeCosts",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Cumulative Costs",
+            "format": null
+          },
+          "CumulativeMeters": {
+            "jimuName": "CumulativeMeters",
+            "name": "CumulativeMeters",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeDouble",
+            "alias": "Cumulative Meters",
+            "format": null
+          },
+          "CumulativeMinutes": {
+            "jimuName": "CumulativeMinutes",
+            "name": "CumulativeMinutes",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeDouble",
+            "alias": "Cumulative Minutes",
+            "format": null
+          },
+          "CurbApproach": {
+            "jimuName": "CurbApproach",
+            "name": "CurbApproach",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Curb Approach",
+            "format": null
+          },
+          "DepartureCurbApproach": {
+            "jimuName": "DepartureCurbApproach",
+            "name": "DepartureCurbApproach",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Departure Curb Approach",
+            "format": null
+          },
+          "DepartureTime": {
+            "jimuName": "DepartureTime",
+            "name": "DepartureTime",
+            "type": "DATE",
+            "esriType": "esriFieldTypeDate",
+            "alias": "Departure Time",
+            "format": null
+          },
+          "DepartureUTCOffset": {
+            "jimuName": "DepartureUTCOffset",
+            "name": "DepartureUTCOffset",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Departure Time",
+            "format": null
+          },
+          "LateMinutes": {
+            "jimuName": "LateMinutes",
+            "name": "LateMinutes",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeDouble",
+            "alias": "Minutes Late",
+            "format": null
+          },
+          "LocationType": {
+            "jimuName": "LocationType",
+            "name": "LocationType",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Location Type",
+            "format": null
+          },
+          "Name": {
+            "jimuName": "Name",
+            "name": "Name",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Name",
+            "format": null
+          },
+          "RouteName": {
+            "jimuName": "RouteName",
+            "name": "RouteName",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Route Name",
+            "format": null
+          },
+          "Sequence": {
+            "jimuName": "Sequence",
+            "name": "Sequence",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Sequence",
+            "format": null
+          },
+          "ServiceCosts": {
+            "jimuName": "ServiceCosts",
+            "name": "ServiceCosts",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Service Costs",
+            "format": null
+          },
+          "ServiceMeters": {
+            "jimuName": "ServiceMeters",
+            "name": "ServiceMeters",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeDouble",
+            "alias": "Service Meters",
+            "format": null
+          },
+          "ServiceMinutes": {
+            "jimuName": "ServiceMinutes",
+            "name": "ServiceMinutes",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeDouble",
+            "alias": "Service Minutes",
+            "format": null
+          },
+          "Status": {
+            "jimuName": "Status",
+            "name": "Status",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Status",
+            "format": null
+          },
+          "TimeWindowEnd": {
+            "jimuName": "TimeWindowEnd",
+            "name": "TimeWindowEnd",
+            "type": "DATE",
+            "esriType": "esriFieldTypeDate",
+            "alias": "Time Window End",
+            "format": null
+          },
+          "TimeWindowEndUTCOffset": {
+            "jimuName": "TimeWindowEndUTCOffset",
+            "name": "TimeWindowEndUTCOffset",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Time Window End Offset",
+            "format": null
+          },
+          "TimeWindowStart": {
+            "jimuName": "TimeWindowStart",
+            "name": "TimeWindowStart",
+            "type": "DATE",
+            "esriType": "esriFieldTypeDate",
+            "alias": "Time Window Start",
+            "format": null
+          },
+          "TimeWindowStartUTCOffset": {
+            "jimuName": "TimeWindowStartUTCOffset",
+            "name": "TimeWindowStartUTCOffset",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Time Window Start Offset",
+            "format": null
+          },
+          "WaitMinutes": {
+            "jimuName": "WaitMinutes",
+            "name": "WaitMinutes",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeDouble",
+            "alias": "Minutes Wait",
+            "format": null
+          }
+        }
+      }
+    },
+    "widget_3_output_direction_point": {
+      "id": "widget_3_output_direction_point",
+      "label": "Direction points",
+      "type": "FEATURE_LAYER",
+      "isOutputFromWidget": true,
+      "geometryType": "esriGeometryPoint",
+      "schema": {
+        "idField": "ObjectID",
+        "fields": {
+          "ObjectID": {
+            "jimuName": "ObjectID",
+            "name": "ObjectID",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeOID",
+            "alias": "ObjectID",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            }
+          },
+          "AlternateName": {
+            "jimuName": "AlternateName",
+            "name": "AlternateName",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Alternative Name",
+            "format": null
+          },
+          "ArrivalTime": {
+            "jimuName": "ArrivalTime",
+            "name": "ArrivalTime",
+            "type": "DATE",
+            "esriType": "esriFieldTypeDate",
+            "alias": "Arrival Time",
+            "format": null
+          },
+          "ArrivalUTCOffset": {
+            "jimuName": "ArrivalUTCOffset",
+            "name": "ArrivalUTCOffset",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Arrival Time Offset",
+            "format": null
+          },
+          "Azimuth": {
+            "jimuName": "Azimuth",
+            "name": "Azimuth",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeDouble",
+            "alias": "Azimuth",
+            "format": null
+          },
+          "BranchName": {
+            "jimuName": "BranchName",
+            "name": "BranchName",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Branch Name",
+            "format": null
+          },
+          "DirectionPointType": {
+            "jimuName": "DirectionPointType",
+            "name": "DirectionPointType",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Directions Point Type",
+            "format": null
+          },
+          "DisplayText": {
+            "jimuName": "DisplayText",
+            "name": "DisplayText",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Display Text",
+            "format": null
+          },
+          "ExitName": {
+            "jimuName": "ExitName",
+            "name": "ExitName",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Exit Name",
+            "format": null
+          },
+          "IntersectingName": {
+            "jimuName": "IntersectingName",
+            "name": "IntersectingName",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Intersecting Name",
+            "format": null
+          },
+          "Level": {
+            "jimuName": "Level",
+            "name": "Level",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Level",
+            "format": null
+          },
+          "Name": {
+            "jimuName": "Name",
+            "name": "Name",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Name",
+            "format": null
+          },
+          "Sequence": {
+            "jimuName": "Sequence",
+            "name": "Sequence",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Sequence",
+            "format": null
+          },
+          "ShortVoiceInstruction": {
+            "jimuName": "ShortVoiceInstruction",
+            "name": "ShortVoiceInstruction",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Short Voice Instruction",
+            "format": null
+          },
+          "StopID": {
+            "jimuName": "StopID",
+            "name": "StopID",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Stop ID",
+            "format": null
+          },
+          "TowardName": {
+            "jimuName": "TowardName",
+            "name": "TowardName",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Toward Name",
+            "format": null
+          },
+          "VoiceInstruction": {
+            "jimuName": "VoiceInstruction",
+            "name": "VoiceInstruction",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Voice Instruction",
+            "format": null
+          }
+        }
+      }
+    },
+    "widget_3_output_direction_line": {
+      "id": "widget_3_output_direction_line",
+      "label": "Direction lines",
+      "type": "FEATURE_LAYER",
+      "isOutputFromWidget": true,
+      "geometryType": "esriGeometryPolyline",
+      "schema": {
+        "idField": "ObjectID",
+        "fields": {
+          "ObjectID": {
+            "jimuName": "ObjectID",
+            "name": "ObjectID",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeOID",
+            "alias": "ObjectID",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            }
+          },
+          "DirectionLineType": {
+            "jimuName": "DirectionLineType",
+            "name": "DirectionLineType",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Line Type",
+            "format": null
+          },
+          "DirectionPointID": {
+            "jimuName": "DirectionPointID",
+            "name": "DirectionPointID",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Direction Point ID",
+            "format": null
+          },
+          "FromLevel": {
+            "jimuName": "FromLevel",
+            "name": "FromLevel",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "From Level",
+            "format": null
+          },
+          "Meters": {
+            "jimuName": "Meters",
+            "name": "Meters",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeDouble",
+            "alias": "Meters",
+            "format": null
+          },
+          "Minutes": {
+            "jimuName": "Minutes",
+            "name": "Minutes",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeDouble",
+            "alias": "Minutes",
+            "format": null
+          },
+          "ToLevel": {
+            "jimuName": "ToLevel",
+            "name": "ToLevel",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "To Level",
+            "format": null
+          }
+        }
+      }
+    },
+    "widget_3_output_route": {
+      "id": "widget_3_output_route",
+      "label": "Route",
+      "type": "FEATURE_LAYER",
+      "isOutputFromWidget": true,
+      "geometryType": "esriGeometryPolyline",
+      "schema": {
+        "idField": "ObjectID",
+        "fields": {
+          "ObjectID": {
+            "jimuName": "ObjectID",
+            "name": "ObjectID",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeOID",
+            "alias": "ObjectID",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            }
+          },
+          "AnalysisSettings": {
+            "jimuName": "AnalysisSettings",
+            "name": "AnalysisSettings",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Analysis Settings",
+            "format": null
+          },
+          "EndTime": {
+            "jimuName": "EndTime",
+            "name": "EndTime",
+            "type": "DATE",
+            "esriType": "esriFieldTypeDate",
+            "alias": "End Time",
+            "format": null
+          },
+          "EndUTCOffset": {
+            "jimuName": "EndUTCOffset",
+            "name": "EndUTCOffset",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "End Time Offset",
+            "format": null
+          },
+          "Messages": {
+            "jimuName": "Messages",
+            "name": "Messages",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Messages",
+            "format": null
+          },
+          "RouteName": {
+            "jimuName": "RouteName",
+            "name": "RouteName",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Route Name",
+            "format": null
+          },
+          "StartTime": {
+            "jimuName": "StartTime",
+            "name": "StartTime",
+            "type": "DATE",
+            "esriType": "esriFieldTypeDate",
+            "alias": "Start Time",
+            "format": null
+          },
+          "StartUTCOffset": {
+            "jimuName": "StartUTCOffset",
+            "name": "StartUTCOffset",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeInteger",
+            "alias": "Start Time Offset",
+            "format": null
+          },
+          "TotalCosts": {
+            "jimuName": "TotalCosts",
+            "name": "TotalCosts",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Total Costs",
+            "format": null
+          },
+          "TotalLateMinutes": {
+            "jimuName": "TotalLateMinutes",
+            "name": "TotalLateMinutes",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeDouble",
+            "alias": "Total Late Minutes",
+            "format": null
+          },
+          "TotalMeters": {
+            "jimuName": "TotalMeters",
+            "name": "TotalMeters",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeDouble",
+            "alias": "Total Meters",
+            "format": null
+          },
+          "TotalMinutes": {
+            "jimuName": "TotalMinutes",
+            "name": "TotalMinutes",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeDouble",
+            "alias": "Total Minutes",
+            "format": null
+          },
+          "TotalWaitMinutes": {
+            "jimuName": "TotalWaitMinutes",
+            "name": "TotalWaitMinutes",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeDouble",
+            "alias": "Total Wait Minutes",
+            "format": null
+          },
+          "Version": {
+            "jimuName": "Version",
+            "name": "Version",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Version",
+            "format": null
+          }
+        }
+      }
+    },
+    "dataSource_2": {
+      "id": "dataSource_2",
+      "type": "WEB_SCENE",
+      "sourceLabel": "3d map with basemap",
+      "itemId": "e1a8782fdf6c45048cdfcefe49ff6d0e",
+      "portalUrl": "https://onesimusgga.maps.arcgis.com"
+    },
+    "dataSource_3": {
+      "id": "dataSource_3",
+      "type": "WEB_SCENE",
+      "sourceLabel": "Map_3D_01",
+      "itemId": "7ec8f8d754954138b663e4b1e135f877",
+      "portalUrl": "https://onesimusgga.maps.arcgis.com"
+    }
+  },
+  "utilities": {
+    "utility_1": {
+      "id": "utility_1",
+      "type": "GEOCODING",
+      "name": "geocode",
+      "label": "ArcGIS World Geocoding Service",
+      "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+      "source": "org",
+      "orgSetting": {
+        "northLat": "Ymax",
+        "southLat": "Ymin",
+        "eastLon": "Xmax",
+        "westLon": "Xmin",
+        "name": "ArcGIS World Geocoding Service",
+        "batch": true,
+        "placefinding": true,
+        "suggest": true
+      },
+      "taskName": "ArcGIS World Geocoding Service",
+      "index": 0
+    },
+    "utility_2": {
+      "id": "utility_2",
+      "type": "ROUTING",
+      "name": "route",
+      "label": "Route",
+      "url": "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World",
+      "source": "org"
+    }
+  },
+  "urlParams": {
+    "widgets": {
+      "widget_2": {
+        "isEnable": true,
+        "params": {
+          "search_status": true
+        }
+      },
+      "widget_1": {
+        "isEnable": false
+      }
+    }
+  },
+  "publishTimestamp": 1756200254649
+}
